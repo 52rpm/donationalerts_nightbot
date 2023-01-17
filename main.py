@@ -3,8 +3,7 @@
 import requests
 import socketio
 
-
-TOKEN = "XXXXXXXXXXX"  # Donation alerts token
+TOKEN = "XXXXXXXXXXX"  # XXXXXXXXXXX = Donation alerts token
 
 sio = socketio.Client()
 
@@ -24,7 +23,7 @@ def on_message(data):
             json.dump(y, outfile)
         # Nightbot
         requests.post('https://api.nightbot.tv/1/channel/send',
-                      headers={'Authorization': 'Bearer XXXXXXXXXXX'},
+                      headers={'Authorization': 'Bearer XXXXXXXXXXX'},  # XXXXXXXXXXX = Nightbot auth token
                       data=dict(
                           message=f"/announceorange New donate from‚ {y['username']} , "
                                   f"{y['amount_formatted']} {y['currency']} ,"
