@@ -12,3 +12,6 @@ Script create donate.json file and store last donate data, u can host donate.jso
 $(eval j=decodeURIComponent("$(querystring $(urlfetch json https://YOUR-DOMAINNAME.COM/donate.json))");try{d=JSON.parse(j);`last donate: ${d.date_created} : ${d.amount_main} ${d.currency} от ${d.username} :message: ${d.message}`.slice(0,400)}catch(e){`Failed to parse donation info: ${e.message}: ${j}`.slice(0,400)})
 ```
 Chanage = https://YOUR-DOMAINNAME.COM to your hostname.<br />
+
+
+**The script was useful to you? can say thank you here https://www.donationalerts.com/r/ru5in donate from 0.10$ cents ;)**
