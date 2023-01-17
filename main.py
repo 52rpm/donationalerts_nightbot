@@ -1,14 +1,15 @@
-﻿import json
+import json
 
 import requests
 import socketio
 
-TOKEN = "XXXXXXXXXXX"  # XXXXXXXXXXX = Donationalerts token
+
+TOKEN = "XXXXXXXXXX"  # XXXXXXXXXX = Donationalerts token
+NIGHTBOT = 'XXXXXXXXXX'  # XXXXXXXXXX = Nightbot auth token
 
 sio = socketio.Client()
 
 
-# Donationalerts
 @sio.on('connect')
 def on_connect():
     sio.emit('add-user', {"token": TOKEN, "type": "alert_widget"})
@@ -16,17 +17,17 @@ def on_connect():
 
 @sio.on('donation')
 def on_message(data):
-    y = json.loads(data)
+    y = json.loads(data)  # Create json file
     if y['alert_type'] == '19':
         pass
     else:
-        with open('donate.json', 'w', encoding='utf8') as outfile:
+        with open('/var/www/html/donate.json', 'w', encoding='utf8') as outfile:  # Save data in donate.json
             json.dump(y, outfile)
         # Nightbot
         requests.post('https://api.nightbot.tv/1/channel/send',
-                      headers={'Authorization': 'Bearer XXXXXXXXXXX'},  # XXXXXXXXXXX = Nightbot auth token
+                      headers={'Authorization': 'Bearer ' + NIGHTBOT},
                       data=dict(
-                          message=f"/announceorange New donate from‚ {y['username']} , "
+                          message=f"/announceorange 💳 New donate from {y['username']} , "
                                   f"{y['amount_formatted']} {y['currency']} ,"
                                   f" message: {y['message']}"))
 
