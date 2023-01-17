@@ -15,3 +15,5 @@ Change = https://YOUR-DOMAINNAME.COM to your hostname in !lastdonate command cod
 
 
 **The script was useful to you? can say thank you here https://www.donationalerts.com/r/ru5in donate from 0.10$ cents ;)**
+
+Run script : Python3 main.py<br />
