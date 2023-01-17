@@ -1,5 +1,5 @@
 # donationalerts_nightbot
-Nightbot send new donation alerts to twitch chat!
+Nightbot send new donation alerts to twitch chat! - simple code on python 3.10
 
 1) Get token from donationalerts.com.<br /> u can find your token here https://www.donationalerts.com/dashboard/general-settings/account
 2) Get Nightbot auth token.<br /> how get Nightbot token read here https://community.nightdev.com/t/nightbot-alerts-in-chat/24059
