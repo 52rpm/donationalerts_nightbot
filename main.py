@@ -21,7 +21,7 @@ def on_message(data):
     if y['alert_type'] == '19':
         pass
     else:
-        with open('/var/www/html/donate.json', 'w', encoding='utf8') as outfile:  # Save data in donate.json
+        with open('donate.json', 'w', encoding='utf8') as outfile:  # Save data in donate.json
             json.dump(y, outfile)
         # Nightbot
         requests.post('https://api.nightbot.tv/1/channel/send',
