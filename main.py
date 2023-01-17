@@ -8,6 +8,7 @@ TOKEN = "XXXXXXXXXXX"  # XXXXXXXXXXX = Donation alerts token
 sio = socketio.Client()
 
 
+# Donationalerts
 @sio.on('connect')
 def on_connect():
     sio.emit('add-user', {"token": TOKEN, "type": "alert_widget"})
@@ -15,11 +16,11 @@ def on_connect():
 
 @sio.on('donation')
 def on_message(data):
-    y = json.loads(data)  # Create json file
+    y = json.loads(data)
     if y['alert_type'] == '19':
         pass
     else:
-        with open('donate.json', 'w', encoding='utf8') as outfile:  # Save data in donate.json
+        with open('donate.json', 'w', encoding='utf8') as outfile:
             json.dump(y, outfile)
         # Nightbot
         requests.post('https://api.nightbot.tv/1/channel/send',
