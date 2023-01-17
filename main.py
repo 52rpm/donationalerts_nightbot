@@ -3,7 +3,7 @@
 import requests
 import socketio
 
-TOKEN = "XXXXXXXXXXX"  # XXXXXXXXXXX = Donation alerts token
+TOKEN = "XXXXXXXXXXX"  # XXXXXXXXXXX = Donationalerts token
 
 sio = socketio.Client()
 
