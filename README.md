@@ -15,3 +15,9 @@ Script create donate.json file and store last donate data, u can host donate.jso
 $(eval j=decodeURIComponent("$(querystring $(urlfetch json https://YOUR-DOMAINNAME.COM/donate.json))");try{d=JSON.parse(j);`last donate: ${d.date_created} : ${d.amount_main} ${d.currency} from ${d.username} :message: ${d.message}`.slice(0,400)}catch(e){`Failed to parse donation info: ${e.message}: ${j}`.slice(0,400)})
 ```
 ![donate3](https://user-images.githubusercontent.com/89786075/213165997-9d85078a-7db3-423d-84fc-f795e72e3e28.png)
+
+
+**Align center:**
+<p align="center" width="100%">
+    <img width="33%" src="https://i.stack.imgur.com/RJj4x.png"> 
+</p>
