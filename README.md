@@ -1,5 +1,8 @@
 # donationalerts_nightbot
-![Donationalerts_Nightbot](https://user-images.githubusercontent.com/89786075/213039339-b84dc14f-af37-4d9e-969f-ffcc88a1358d.png)
+
+<p align="center" width="100%">
+    <img width="75%" src="https://i.imgur.com/WKIXwj9.png"> 
+</p>
 
 
 **Nightbot send new donation alerts to twitch , youtube , trovo chat!** - simple code on python 3.10
