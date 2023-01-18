@@ -16,3 +16,5 @@ $(eval j=decodeURIComponent("$(querystring $(urlfetch json https://YOUR-DOMAINNA
 ```
 
 ![donate](https://user-images.githubusercontent.com/89786075/213164932-f541734a-5346-4baa-b7be-1dcf93c84bf1.png)
+
+![donate1](https://user-images.githubusercontent.com/89786075/213165527-a99e8456-ce7e-41b5-b9b3-c48c203e1bcd.png)
