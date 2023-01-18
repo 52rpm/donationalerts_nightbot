@@ -1,7 +1,7 @@
 # donationalerts_nightbot
 
 <p align="center" width="100%">
-    <img width="75%" src="https://i.imgur.com/WKIXwj9.png"> 
+    <img width="50%" src="https://i.imgur.com/WKIXwj9.png"> 
 </p>
 
 
