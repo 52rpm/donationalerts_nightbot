@@ -2,7 +2,7 @@
 ![Donationalerts_Nightbot](https://user-images.githubusercontent.com/89786075/213039339-b84dc14f-af37-4d9e-969f-ffcc88a1358d.png)
 
 
-Nightbot send new donation alerts to twitch , youtube , trovo chat! - simple code on python 3.10
+**Nightbot send new donation alerts to twitch , youtube , trovo chat!** - simple code on python 3.10
 
 1) Get token from donationalerts.com.<br /> u can find your token here https://www.donationalerts.com/dashboard/general-settings/account
 2) Get Nightbot auth token.<br /> how get Nightbot token read here https://community.nightdev.com/t/nightbot-alerts-in-chat/24059
