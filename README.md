@@ -16,6 +16,5 @@ $(eval j=decodeURIComponent("$(querystring $(urlfetch json https://YOUR-DOMAINNA
 ```
 
 <p align="center" width="100%">
-    <img width="33%" src="[https://i.stack.imgur.com/RJj4x.png](https://i.imgur.com/InMBNjP.png)"> 
+    <img width="33%" src="https://i.stack.imgur.com/RJj4x.png"> 
 </p>
-
