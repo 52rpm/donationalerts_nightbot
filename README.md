@@ -1,4 +1,3 @@
-<p align="center">
 # donationalerts_nightbot
 ![Donationalerts_Nightbot](https://user-images.githubusercontent.com/89786075/213039339-b84dc14f-af37-4d9e-969f-ffcc88a1358d.png)
 
@@ -15,4 +14,3 @@ Script create donate.json file and store last donate data, u can host donate.jso
 ```
 $(eval j=decodeURIComponent("$(querystring $(urlfetch json https://YOUR-DOMAINNAME.COM/donate.json))");try{d=JSON.parse(j);`last donate: ${d.date_created} : ${d.amount_main} ${d.currency} from ${d.username} :message: ${d.message}`.slice(0,400)}catch(e){`Failed to parse donation info: ${e.message}: ${j}`.slice(0,400)})
 ```
-</p>
