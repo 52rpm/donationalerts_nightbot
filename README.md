@@ -21,3 +21,6 @@ $(eval j=decodeURIComponent("$(querystring $(urlfetch json https://YOUR-DOMAINNA
 <p align="center" width="100%">
     <img width="75%" src="https://i.imgur.com/InMBNjP.png"> 
 </p>
+
+
+Lai labi garšo )) (c) emka87
